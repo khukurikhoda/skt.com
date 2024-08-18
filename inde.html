@@ -1,123 +1,30 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KHUKURI AND KHODA </title>
-
-
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 2em;
-            background-color: #f6f1d1;
-        }
-
-        /* Header Styles */
-        .header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .header img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-        .header h1 {
-            margin-bottom: 0.5em;
-            font-size: 1.5em;
-            color: #0f0e0e;
-        }
-        .header h4, .header h5 {
-            margin: 0;
-        }
-
-        /* Social Media Styles */
-        .social-media-list a {
-            margin: 0 10px;
-        }
-        .social-media-list img {
-            width: 30px;
-            height: 30px;
-        }
-
-        /* Products Column Styles */
-        .products {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .product {
-            width: 100%;
-            max-width: 300px;
-            padding: 1em;
-            box-shadow: 0 0 10px rgba(12, 10, 10, 0.1);
-            border: 1px solid #cccccc;
-            border-radius: 5px;
-            margin: 10px 0;
-            text-align: center;
-            background-color: #eef5f7;
-        }
-        .product img {
-            max-width: 100%;
-            height: auto;
-        }
-        .product h5 {
-            margin-top: 10px;
-            font-size: 16px;
-        }
-        .price {
-            font-weight: bold;
-            color: rgb(248, 6, 6);
-            background-color: #f7f3f3;
-            padding: 5px 10px;
-            border-radius: 5px;
-            display: inline-block;
-            margin-bottom: 10px;
-        }
-        .buy-btn {
-            display: block;
-            width: 100%;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 0;
-            cursor: pointer;
-            text-decoration: none;
-            text-align: center;
-        }
-    </style>
-
-
+    <title>KHUKURI AND KHODA</title>
+    <link rel="stylesheet" href="inde.css">
 </head>
 <body>
-    <!-- HTML content here -->
 
     <div class="header">
         <img src="logo.webp" alt="Company Logo" class="logo">
         <h1>Shree Krishna Traders</h1>
         <h4>Tilottama -01,Rupandehi</h4>
-        <h5> FEEL FREE TO BUY ANYTHING FROM THIS WEBSITE .FROM WHATSAPP YOU CAN ORDER AND BUY ITEMS .</h5>
+        <h5>FEEL FREE TO BUY ANYTHING FROM THIS WEBSITE. FROM WHATSAPP YOU CAN ORDER AND BUY ITEMS.</h5>
     </div>
-    
-    
-    <h5>Check our social media accounts and contact.  </h5>
+
+    <h5>Check our social media accounts and contact.</h5>
     <div class="social-media-list">
         <a href="https://www.youtube.com/@krishnaneupane3567" target="_blank"><img src="icons8-youtube-48.webp" alt="YouTube Logo"></a>
         <a href="https://www.instagram.com/krishanaa?igsh=YzAwZjE1ZTI0Zg%3D%3D&utm_source=qr" target="_blank"><img src="icons8-instagram-48.webp" alt="Instagram Logo"></a>
         <a href="https://www.tiktok.com/@krishnan5477" target="_blank"><img src="icons8-tiktok-48.webp" alt="TikTok Logo"></a>
         <a href="https://wa.me/message/TWGZ7TGIUQ4QN1" target="_blank"><img src="icons8-whatsapp-48.webp" alt="WhatsApp Logo"></a>
         <a href="https://www.facebook.com/profile.php?id=100042131903227&mibextid=LQQJ4d" target="_blank"><img src="icons8-facebook-48.webp" alt="Facebook Logo"></a>
-      </div>
+    </div>
 
-      <div class="products">
+    <div class="products">
         <div class="product">
             <span class="serial-no">1.</span>
             <img src="55.webp" alt="5 inch Khukuri">
@@ -127,11 +34,21 @@
         </div>
 
 
+        
      <div class="product">
         <span class="serial-no">2.</span>
-    <img src="2p.webp" alt="Product 1">
+    <img src="79.webp" alt="Product 1">
+    <h5>DAU WITH BUTCHER BLOCK ROUND</h5>
+    <p class="price">Rs.1350/PIC+250*weight </p>
+    <button class="buy-btn" onclick="sendWhatsApp('NORMAL DAU', 'Rs.1299/PIC','2')">Buy Now</button>
+    </div>
+
+        
+    <div class="product">
+        <span class="serial-no">2.</span>
+    <img src="80.webp" alt="Product 1">
     <h5>NORMAL DAU</h5>
-    <p class="price">Rs.1299/PIC</p>
+    <p class="price">Rs.1350/PIC</p>
     <button class="buy-btn" onclick="sendWhatsApp('NORMAL DAU', 'Rs.1299/PIC','2')">Buy Now</button>
     </div>
 
@@ -796,28 +713,12 @@
     </div>
 </div>
 
+        <!-- Add more products here -->
+    </div>
 
-
-
-    <!-- JavaScript code -->
-    <script>
-        function sendWhatsApp(productName, price, productNo) {
-            var message = "Product No: " + productNo + "\n" +
-                          "Product Name: " + productName + "\n" +
-                          "Price: " + price + "\n" +
-                          "Please contact me!";
-            // Replace the phone number below with the recipient's phone number
-            var phoneNumber = "9779864563255"; // Remove the '+' sign from the phone number
-            var url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
-            window.open(url, '_blank');
-        }
-    </script>
-
-    <!-- Product cards -->
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 ShreeKrishnaTraders. All rights reserved.</p>
-    </footer>
+    <!-- GSAP and ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    <script src="inde.js"></script>
 </body>
 </html>
