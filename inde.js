@@ -37,11 +37,3 @@ gsap.utils.toArray('.product').forEach((product, i) => {
     }
   );
 });
-<script>
-    function sendWhatsApp(product, price, serialNo) {
-        let message = `I'd like to buy the ${product} at ${price}. Serial No: ${serialNo}`;
-        let whatsappNumber = "9779864563255"; // Your WhatsApp number with country code
-        window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank');
-    }
-</script>
-// WhatsApp chat script
